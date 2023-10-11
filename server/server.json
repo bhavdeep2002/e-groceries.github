@@ -1,0 +1,78 @@
+{
+    "product":[
+        {
+            "id":1
+            ,"name":"Natural Extracted Edible Oil"
+            ,"price":"£25.00"
+            ,"image":"/image/oil.PNG"
+            ,"category":"Groceries"
+
+        },
+        {
+            "id":2
+            ,"name":"Assorted Coffee"
+            ,"price":"£35.00"
+            ,"image":"/image/coffee.PNG"
+            ,"category":"Groceries"
+
+        },
+        {
+            "id":3
+            ,"name":"Hand Sanitizer"
+            ,"price":"£15.00"
+            ,"image":"/image/handsanatizer.PNG"
+            ,"category":"Groceries"
+
+        },
+        {
+            "id":4
+            ,"name":"Handpicked Red Chillies"
+            ,"price":"£19.00"
+            ,"image":"/image/redchilli.PNG"
+            ,"category":"Groceries"
+
+        }
+    ],
+    "trending" :[
+        {
+            "id":1
+            ,"name":"Assorted Coffee"
+            ,"price":"£35.00"
+            ,"image":"/image/coffee.PNG"
+            ,"category":"Groceries"
+
+        },
+        {
+            "id":2
+            ,"name":"Assorted Coffee"
+            ,"price":"£18.00"
+            ,"image":"/image/orangejuice.PNG"
+            ,"category":"Juice"
+
+        },
+        {
+            "id":3
+            ,"name":"Hand Sanitizer"
+            ,"price":"£15.00"
+            ,"image":"/image/handsanatizer.PNG"
+            ,"category":"Groceries"
+
+        },
+        {
+            "id":4
+            ,"name":"Handpicked Red Chillies"
+            ,"price":"£19.00"
+            ,"image":"/image/redchilli.PNG"
+            ,"category":"Groceries"
+
+        }
+
+    ],
+    "reviews":[
+       {
+        "id":1,
+        "name":"",
+        "comment":""
+       }
+    ]
+}
