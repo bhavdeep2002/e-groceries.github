@@ -27,9 +27,6 @@ class Servicecontainer extends Component {
                         </div>
                     </div>
                 </div>
-                <Bestsellingproduct heading="Best Selling Products" urltype="bestselling-product" />
-                <Bestsellingproduct heading="Trending Products" urltype="trending-product" />
-                <Bestsellingproduct heading="Customers Reviews" urltype="reviews"  />
 
             </>
 

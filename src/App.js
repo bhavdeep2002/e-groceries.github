@@ -4,8 +4,11 @@ import "../node_modules/bootstrap/dist/js/bootstrap.min.js"
 import Main from "./comp/Main/Main.js";
 import { BrowserRouter } from "react-router-dom";
 import "../src/styles/styles.css"
+
+
 function App() {
   return (
+    // you can not nest Router inside Router , Router should be one
     <BrowserRouter>
       <Header />
       <Main />
@@ -14,4 +17,5 @@ function App() {
   );
 }
 
-export default App;
+export default App
+

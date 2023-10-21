@@ -3,6 +3,7 @@ import Productcard from '../Productcard/Productcard'
 class Product extends Component {
     constructor(props){
         super(props)
+       
     }
     render() {
         
@@ -10,7 +11,7 @@ class Product extends Component {
             <div className="col-md-3">
                 <section>
                   
-                    <Productcard name={this.props.name} price={this.props.price} category={this.props.category} image={this.props.image} />
+                    <Productcard id ={this.props.id} name={this.props.name} price={this.props.price} category={this.props.category} image={this.props.image} />
                 </section>
             </div>
         );

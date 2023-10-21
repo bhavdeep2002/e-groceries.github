@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class Productcard extends Component {
   constructor(props) {
@@ -8,24 +9,27 @@ class Productcard extends Component {
       img : this.props.image,
       category : this.props.category,
       name:this.props.name,
-      price:this.props.price
+      price:this.props.price,
+      id:this.props.id
     }
+    
    
   }
+  
   render() {
-    // console.log("product card")
+    // ("product card")
     return (
       <div className="card">
-        <a href="#">
+        <Link to="/ProductDetail">
         
           <img className="card-img-top product-image" src={this.state.img} />
          
-        </a>
+        </Link>
         <div className="card-body">
           <div className="category">{this.state.category}</div>
-          <a href="#" className="productname">
-            <h5 className="card-title">{this.state.name}</h5>
-          </a>
+          <Link to={`/ProductDetail/${this.state.id}`} className="productname">
+            <h5  className="card-title">{this.state.name}</h5>
+          </Link>
           <p className="card-text">{this.state.price}</p>
           <img className="fivestar" src="image/5-Stars-PNG-HD.png"/>
         </div>
