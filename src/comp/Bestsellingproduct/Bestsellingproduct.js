@@ -3,6 +3,7 @@ import Product from '../Product/Product'
 import axios from 'axios';
 import Headingh2 from '../Headingh2/Headingh2';
 import Reviews from '../Reviews/Reviews';
+import { Link } from 'react-router-dom';
 
 class Bestsellingproduct extends Component {
 
@@ -67,7 +68,9 @@ class Bestsellingproduct extends Component {
                             <div className="row">
                                 {this.state.products.map((p) => {
                                     return (
+                                     
                                       <Product id={p.id} key={p.id} name={p.name} price={p.price} category={p.category} image={p.image}  />
+                         
                                     )
                                 })}
                             </div>

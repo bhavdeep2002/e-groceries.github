@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 import Servicecontainer from '../Service-container/Servicecontainer';
 import Storedetail from '../StoreDetails/Storedetail';
 import Bestsellingproduct from '../Bestsellingproduct/Bestsellingproduct';
-import ProductDatail from '../ProductDetail/ProductDetail';
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import FrontProduct from '../FrontProduct/FrontProduct';
+
 class Home extends Component {
     render() {
         return (

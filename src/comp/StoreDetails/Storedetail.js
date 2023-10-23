@@ -20,7 +20,7 @@ class Storedetail extends Component {
                         <div className="col-md-3" style={{ width: "20%" }}>
                         </div>
                     </div>
-                    <Addtocartbtn />
+                    <Addtocartbtn text="SHOP NOW"/>
                 </div>
             </div>
         );
