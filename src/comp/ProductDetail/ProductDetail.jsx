@@ -1,11 +1,8 @@
 import React from 'react'
 import FrontProduct from '../FrontProduct/FrontProduct'
-import { Link, Outlet, useParams } from 'react-router-dom'
+import { Outlet} from 'react-router-dom'
 
-
-export default function ProductDetail() {
-
-
+export default function ProductDetail({match}) {
   return (
     <>
       <div className="container-flex background-color">

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-class Productcard extends Component {
+class Product extends Component {
   constructor(props) {
     super(props)
     // i am getting props object as props ={image:"",category:"",name:"",price:"",id:""}
@@ -41,4 +41,4 @@ class Productcard extends Component {
     }
 }
 
-export default Productcard;
+export default Product;

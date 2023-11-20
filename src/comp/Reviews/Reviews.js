@@ -24,26 +24,24 @@ class Reviews extends Component {
     }
 
     reviewsend(e) {
-        e.preventDefault() 
-        axios.post("http://localhost:3012/reviews", this.state)
-        .then((res)=>{
-            
-        })
-        .catch()
+        e.preventDefault()
+
+
         swal({
             position: 'top-end',
             icon: 'success',
             title: 'comment has sent',
             showConfirmButton: false,
             timer: 1500
-          })
+        })
+
+        axios.post("http://localhost:3012/reviews", this.state)
+            .then((res) => {
+            }).catch()
 
     }
-    componentDidMount() {
-       
-       
-    }
     render() {
+        console.log("render")
         console.log(this.state)
         return (
             <div className="row">
@@ -76,12 +74,12 @@ class Reviews extends Component {
                             <div className="row">
                                 <div className="col-md-12">
                                     <div className='textbox'>
-                                        <input style={{height:"15px",width:"15px", marginRight:"8px"}} type="checkbox" />
+                                        <input style={{ height: "15px", width: "15px", marginRight: "8px" }} type="checkbox" />
                                         <label>Save my name, email, and website in this browser for the next time I comment.</label>
                                     </div>
                                 </div>
                             </div>
-                            <Addtocartbtn reviewsend={this.reviewsend} text="SUBMIT" className="textbox"/>
+                            <Addtocartbtn reviewsend={this.reviewsend} text="SUBMIT" className="textbox" />
                         </div>
                     </form>
                 </div>

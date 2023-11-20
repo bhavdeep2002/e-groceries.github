@@ -6,6 +6,7 @@
       "price": "£25.00",
       "image": "/image/oil.PNG",
       "category": "Groceries"
+      ,"description":"Natural Extracted Edible Oil is an excellent choice if you're looking for a healthier alternative. We extract using a method that doesn't involve excessive heat or chemicals, which helps retain more nutrients and antioxidants compared to other extraction methods. "
     },
     {
       "id": 2,
@@ -65,12 +66,6 @@
       "name": "",
       "email": "",
       "id": 1
-    },
-    {
-      "review": "ass",
-      "name": "sssss",
-      "email": "sssssssssssssssssssssssssss",
-      "id": 2
     }
   ]
 }

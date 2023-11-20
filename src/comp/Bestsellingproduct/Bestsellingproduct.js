@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import Product from '../Product/Product'
 import axios from 'axios';
 import Headingh2 from '../Headingh2/Headingh2';
-import Reviews from '../Reviews/Reviews';
-import { Link } from 'react-router-dom';
 
 class Bestsellingproduct extends Component {
 
@@ -40,10 +38,7 @@ class Bestsellingproduct extends Component {
        axios.get(this.state.url)
        .then((res) => {
            const product = res.data;
-
            this.setState({ products: product }); // Update state with product data
-
-
         })
        .catch((e) => {
            console.log("Error " + e);
@@ -56,7 +51,7 @@ class Bestsellingproduct extends Component {
 
     render() {
         //second render will run
-        // {console.log(this.state.products)} //this shows data will be added to products array after ComponentDidMount
+        {console.log(this.state.products)} //this shows data will be added to products array after ComponentDidMount
         // console.log(this.props.urltype +" render")
         return (
             <section>
@@ -68,9 +63,7 @@ class Bestsellingproduct extends Component {
                             <div className="row">
                                 {this.state.products.map((p) => {
                                     return (
-                                     
                                       <Product id={p.id} key={p.id} name={p.name} price={p.price} category={p.category} image={p.image}  />
-                         
                                     )
                                 })}
                             </div>
